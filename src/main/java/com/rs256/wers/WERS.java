@@ -1,6 +1,5 @@
 package com.rs256.wers;
 
-import com.rs256.wers.command.WERSCommand;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.resources.Identifier;
@@ -39,8 +38,6 @@ public class WERS implements ModInitializer {
 
         //? if fapi: <0.100
         /*LOGGER.info("Fabric API is old on this version");*/
-
-        registerCommands();
     }
 
     /**
@@ -52,9 +49,5 @@ public class WERS implements ModInitializer {
         *///?} else {
         return Identifier.fromNamespaceAndPath(namespace, path);
         //?}
-    }
-
-    public void registerCommands() {
-        CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> WERSCommand.register(dispatcher, registryAccess));
     }
 }
