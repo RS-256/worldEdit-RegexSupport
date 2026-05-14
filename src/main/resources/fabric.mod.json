@@ -12,22 +12,15 @@
     "sources": ""
   },
   "license": "CC0-1.0",
-  "icon": "assets/worldedit_rs/icon.png",
+  "icon": "assets/wers/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
       "com.rs256.wers.WERS"
-    ],
-    "client": [
-      "com.rs256.wers.client.WERSClient"
     ]
   },
   "mixins": [
-    "wers.mixins.json",
-    {
-      "config": "wersClient.mixins.json",
-      "environment": "client"
-    }
+    "wers.mixins.json"
   ],
   "accessWidener": "${accesswidener}",
   "depends": {
