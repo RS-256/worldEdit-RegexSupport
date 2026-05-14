@@ -1,9 +1,9 @@
 {
   "required": true,
-  "package": "com.example.client.mixin",
+  "package": "com.rs256.wers.client.mixin",
   "compatibilityLevel": "${java}",
   "client": [
-    "ExampleClientMixin"
+    "WERSClientMixin"
   ],
   "injectors": {
     "defaultRequire": 1

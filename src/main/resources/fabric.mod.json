@@ -9,23 +9,23 @@
   ],
   "contact": {
     "homepage": "https://stonecutter.kikugie.dev/",
-    "sources": "https://codeberg.org/stonecutter/template-fabric"
+    "sources": ""
   },
   "license": "CC0-1.0",
-  "icon": "assets/template/icon.png",
+  "icon": "assets/worldedit_rs/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.example.TemplateMod"
+      "com.rs256.wers.WERS"
     ],
     "client": [
-      "com.example.client.TemplateModClient"
+      "com.rs256.wers.client.WERSClient"
     ]
   },
   "mixins": [
-    "template.mixins.json",
+    "wers.mixins.json",
     {
-      "config": "templateClient.mixins.json",
+      "config": "wersClient.mixins.json",
       "environment": "client"
     }
   ],

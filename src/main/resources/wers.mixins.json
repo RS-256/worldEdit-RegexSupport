@@ -1,9 +1,9 @@
 {
   "required": true,
-  "package": "com.example.mixin",
+  "package": "com.rs256.wers.mixin",
   "compatibilityLevel": "${java}",
   "mixins": [
-    "ExampleMixin"
+    "WERSMixin"
   ],
   "injectors": {
     "defaultRequire": 1

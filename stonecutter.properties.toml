@@ -1,8 +1,8 @@
 # Mod metadata — shared across all versions
-mod.id      = "worldedit_rs"
+mod.id      = "wers"
 mod.name    = "worldEdit-RegexSupport"
 mod.version = "0.1.0"
-mod.group   = "com.example"
+mod.group   = "com.rs256.wers"
 
 # deps. is used dependency resolving,
 # build. is used build jar resource prosessing

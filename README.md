@@ -1,10 +1,10 @@
-# Stonecutter Fabric template
+# worldEdit-RegexSupport
 ## Setup
 1. Review the supported Minecraft versions in `settings.gradle.kts`.
    For new entries, add `versions/.../gradle.properties` with the same keys as other versions.
-2. Change `mod.group`, `mod.id` and `mod.name` properties in `gradle.properties`.
-3. Rename `com.example` package in `src/main/java`.
-4. Rename `src/main/resources/template.mixins.json` to use your mod's id.
+2. Change `mod.group`, `mod.id` and `mod.name` properties in `stonecutter.properties.toml`.
+3. Rename the `com.example` package in `src/main/java`.
+4. Rename `src/main/resources/template.mixins.json` and `templateClient.mixins.json`.
 5. Review the `LICENSE` file. 
    See the [license decision diagram](https://docs.codeberg.org/getting-started/licensing/#license-decision-diagram) for common options.
 6. Review `src/main/resources/fabric.mod.json` to have up-to-date properties.

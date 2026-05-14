@@ -1,6 +1,6 @@
-package com.example;
+package com.rs256.wers;
 
-import com.example.command.TemplateModCommand;
+import com.rs256.wers.command.WERSCommand;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.resources.Identifier;
@@ -12,8 +12,8 @@ import com.mojang.logging.LogUtils;
 import org.slf4j.Logger;
 //?}
 
-public class TemplateMod implements ModInitializer {
-    public static final String MOD_ID = "worldedit_rs";
+public class WERS implements ModInitializer {
+    public static final String MOD_ID = "wers";
     public static final String VERSION = /*$ mod_version*/ "0.1.0";
     public static final String MINECRAFT = /*$ minecraft*/ "26.1.2";
 
@@ -35,7 +35,7 @@ public class TemplateMod implements ModInitializer {
         LOGGER.info("Hello Fabric world!");
 
         //? if !release
-        //LOGGER.warn("I'm still a template!");
+        //LOGGER.warn("WERS is running in development mode.");
 
         //? if fapi: <0.100
         /*LOGGER.info("Fabric API is old on this version");*/
@@ -55,6 +55,6 @@ public class TemplateMod implements ModInitializer {
     }
 
     public void registerCommands() {
-        CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> TemplateModCommand.register(dispatcher, registryAccess));
+        CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> WERSCommand.register(dispatcher, registryAccess));
     }
 }

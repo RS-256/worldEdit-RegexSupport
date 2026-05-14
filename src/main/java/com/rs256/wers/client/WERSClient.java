@@ -1,8 +1,8 @@
-package com.example.client;
+package com.rs256.wers.client;
 
 import net.fabricmc.api.ClientModInitializer;
 
-public class TemplateModClient implements ClientModInitializer {
+public class WERSClient implements ClientModInitializer {
     @Override
         public void onInitializeClient() {
     }
