@@ -3,6 +3,7 @@
   "package": "com.rs256.wers.mixin",
   "compatibilityLevel": "${java}",
   "mixins": [
+    "MaskFactoryMixin",
     "WERSMixin"
   ],
   "injectors": {
