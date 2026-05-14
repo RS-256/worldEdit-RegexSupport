@@ -13,9 +13,9 @@ import org.slf4j.Logger;
 //?}
 
 public class TemplateMod implements ModInitializer {
-    public static final String MOD_ID = "template";
+    public static final String MOD_ID = "worldedit_rs";
     public static final String VERSION = /*$ mod_version*/ "0.1.0";
-    public static final String MINECRAFT = /*$ minecraft*/ "26.1";
+    public static final String MINECRAFT = /*$ minecraft*/ "26.1.2";
 
     // This logger is used to write text to the console and the log file.
     // It is considered best practice to use your mod id as the logger's name.
@@ -35,7 +35,7 @@ public class TemplateMod implements ModInitializer {
         LOGGER.info("Hello Fabric world!");
 
         //? if !release
-        LOGGER.warn("I'm still a template!");
+        //LOGGER.warn("I'm still a template!");
 
         //? if fapi: <0.100
         /*LOGGER.info("Fabric API is old on this version");*/

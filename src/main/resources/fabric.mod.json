@@ -33,6 +33,7 @@
   "depends": {
     "fabricloader": "${fabricLoader}",
     "minecraft": "${minecraft}",
-    "${fabricApiKey}": "${fabricAPI}"
+    "${fabricApiKey}": "${fabricAPI}",
+    "worldedit": "${worldEdit}"
   }
 }

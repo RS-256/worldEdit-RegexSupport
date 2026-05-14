@@ -28,6 +28,7 @@ repositories {
     }
     strictMaven("https://www.cursemaven.com",     "CurseForge", "curse.maven")
     strictMaven("https://api.modrinth.com/maven", "Modrinth",   "maven.modrinth")
+    maven("https://maven.enginehub.org/repo/") { name = "EngineHub" }
 }
 
 // ---------------------------------------------------------------
@@ -49,6 +50,7 @@ dependencies {
     mappings(loom.officialMojangMappings())
     modImplementation("net.fabricmc:fabric-loader:${property("deps.fabric_loader")}")
     modImplementation("net.fabricmc.fabric-api:fabric-api:${property("deps.fabric_api")}")
+    modImplementation("com.sk89q.worldedit:worldedit-fabric-mc${sc.current.version}:${property("deps.worldedit")}")
 }
 
 // ---------------------------------------------------------------
@@ -100,6 +102,7 @@ tasks {
             "fabricLoader"  to project.property("build.fabric_loader"),
             "fabricAPI"     to project.property("build.fabric_api"),
             "fabricApiKey"  to fabricApiKey,
+            "worldEdit"     to project.property("build.worldedit"),
             "accesswidener" to accesswidener
         )
         filesMatching("fabric.mod.json") { expand(props) }
